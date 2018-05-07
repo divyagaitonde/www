@@ -11,7 +11,7 @@ body{
   align-items: center;
 }
 
-@media (max-width: 599px) {
+@media only screen and (max-width: 599px) {
   .centered {
     margin: 0.5em;
     margin-top: 1em;
@@ -19,7 +19,7 @@ body{
   }
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .centered {
     max-width: 600px;
     margin: auto;
