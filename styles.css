@@ -15,14 +15,16 @@ body{
 
 }
 
-h1 {
+h1, ul {
   font-size: 0.75em;
-  font-weight: 600;
+  font-weight: 500;
   color: #3d3d3d;
-
 }
-/* ul, li {
-  font-size: 0.9em;
+
+/* h2 {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #999999;
 } */
 
 @media screen and (max-width: 599px) {
