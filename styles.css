@@ -26,10 +26,10 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: flex;
 }
 body {
-	line-height: 1.5;
+	line-height: 1.6;
 }
 ol, ul {
 	list-style: none;
@@ -54,11 +54,25 @@ body{
   color: #3d3d3d;
   background-color: #f7f7f7;
   margin: 3rem;
-	max-width: 450px;
 }
 
-h1, ul {
-  font-size: 0.75rem;
+@media screen and (min-width: 601px) {
+  div.example {
+    max-width: 450px;
+
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 16px;
+  }
+}
+
+
+h1 {
+  /* font-size: 0.75rem; */
   font-weight: 500;
   color: #3d3d3d;
 }
@@ -78,7 +92,7 @@ a:hover {
 
 /* p {
   max-width: 400px;
-} */
+}  */
 
 /* .centered {
   display: flex;
